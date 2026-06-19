@@ -1,0 +1,182 @@
+PYTHON PROGRAMMING KNOWLEDGE FILE
+
+Python is a high-level, interpreted programming language used for web development,
+automation, data science, machine learning, scripting, and AI development.
+
+Python focuses on readability and simplicity.
+
+------------------------------------------------
+
+PYTHON FEATURES
+
+1. Simple syntax
+2. Interpreted language
+3. Cross-platform
+4. Large ecosystem of libraries
+5. Object-oriented programming
+6. Functional programming support
+
+------------------------------------------------
+
+PYTHON BASIC SYNTAX
+
+Print statement
+
+print("Hello World")
+
+Variables
+
+name = "Alice"
+age = 19
+
+Data Types
+
+int
+float
+string
+boolean
+list
+tuple
+dictionary
+
+Example
+
+number = 10
+price = 9.99
+name = "Python"
+is_active = True
+
+------------------------------------------------
+
+CONDITIONAL STATEMENTS
+
+if statement
+
+age = 18
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+------------------------------------------------
+
+LOOPS
+
+For loop
+
+for i in range(5):
+    print(i)
+
+While loop
+
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+------------------------------------------------
+
+FUNCTIONS
+
+Functions allow reusable code.
+
+Example
+
+def greet(name):
+    print("Hello", name)
+
+greet("Alice")
+
+------------------------------------------------
+
+CLASSES (OBJECT ORIENTED PROGRAMMING)
+
+Example
+
+class Person:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        print("My name is", self.name)
+
+person = Person("Alice", 19)
+person.introduce()
+
+------------------------------------------------
+
+FILE HANDLING
+
+Writing a file
+
+with open("file.txt", "w") as file:
+    file.write("Hello World")
+
+Reading a file
+
+with open("file.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+------------------------------------------------
+
+PYTHON LIBRARIES
+
+Common libraries used in projects
+
+os
+sys
+requests
+numpy
+pandas
+flask
+django
+tensorflow
+torch
+
+------------------------------------------------
+
+AUTOMATION USING PYTHON
+
+Example opening application
+
+import os
+os.system("open /Applications/Safari.app")
+
+Example screenshot
+
+import pyautogui
+pyautogui.screenshot("screen.png")
+
+------------------------------------------------
+
+PYTHON PROJECT IDEAS
+
+File organizer script
+Web scraper
+Chatbot
+Voice assistant
+Automation tools
+API server
+Desktop automation
+Machine learning models
+
+------------------------------------------------
+
+WHEN USER ASKS FOR PYTHON PROJECT
+
+Assistant should:
+
+1. create project folder
+2. generate file structure
+3. write starter code
+4. explain code if requested
+
+Example command
+
+User: create python automation script
+
+Assistant should generate working code.

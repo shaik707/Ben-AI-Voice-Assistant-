@@ -1,0 +1,34 @@
+SYSTEM COMMAND KNOWLEDGE
+
+The assistant must understand system level commands.
+
+Supported system operations include:
+
+Open applications
+Close applications
+Control brightness
+Control volume
+Lock screen
+Shutdown system
+Restart system
+
+Example commands:
+
+open chrome
+open safari
+open terminal
+open visual studio code
+
+close chrome
+close terminal
+
+increase brightness
+decrease brightness
+
+volume up
+volume down
+mute volume
+
+lock screen
+shutdown computer
+restart computer

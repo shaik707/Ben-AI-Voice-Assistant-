@@ -1,0 +1,22 @@
+MEMORY SYSTEM EXAMPLES
+
+User facts can be remembered.
+
+Example:
+
+User: my name is John Doe
+Store:
+key: name
+value: John Doe
+
+User: remember my favorite color is black
+Store:
+key: favorite_color
+value: black
+
+When user asks:
+
+User: what is my favorite color
+Assistant retrieves stored memory.
+
+Memory should persist between sessions.

@@ -1,0 +1,375 @@
+# BENN AI Training Data
+# Format: User input → Expected JSON action output
+# Used by the LLM brain for intent detection and action mapping
+
+# ==================== APPLICATION CONTROL ====================
+
+User: open chrome
+{"action": "open_app", "app": "chrome"}
+
+User: launch google chrome
+{"action": "open_app", "app": "google chrome"}
+
+User: open safari
+{"action": "open_app", "app": "safari"}
+
+User: start visual studio code
+{"action": "open_app", "app": "visual studio code"}
+
+User: open terminal
+{"action": "open_app", "app": "terminal"}
+
+User: open whatsapp
+{"action": "open_app", "app": "whatsapp"}
+
+User: open spotify
+{"action": "open_app", "app": "spotify"}
+
+User: open calculator
+{"action": "open_app", "app": "calculator"}
+
+User: open settings
+{"action": "open_app", "app": "settings"}
+
+User: close chrome
+{"action": "close_app", "app": "chrome"}
+
+User: kill safari
+{"action": "close_app", "app": "safari"}
+
+User: close terminal
+{"action": "close_app", "app": "terminal"}
+
+User: quit spotify
+{"action": "close_app", "app": "spotify"}
+
+# ==================== VOLUME CONTROL ====================
+
+User: volume up
+{"action": "volume_up"}
+
+User: increase volume
+{"action": "volume_up"}
+
+User: make it louder
+{"action": "volume_up"}
+
+User: volume down
+{"action": "volume_down"}
+
+User: decrease volume
+{"action": "volume_down"}
+
+User: lower the volume
+{"action": "volume_down"}
+
+User: mute the volume
+{"action": "volume_mute"}
+
+User: silence
+{"action": "volume_mute"}
+
+# ==================== BRIGHTNESS ====================
+
+User: brightness up
+{"action": "brightness_up"}
+
+User: increase brightness
+{"action": "brightness_up"}
+
+User: make it brighter
+{"action": "brightness_up"}
+
+User: brightness down
+{"action": "brightness_down"}
+
+User: decrease brightness
+{"action": "brightness_down"}
+
+User: dim the screen
+{"action": "brightness_down"}
+
+# ==================== TIME & DATE ====================
+
+User: what time is it
+{"action": "get_time"}
+
+User: tell me the time
+{"action": "get_time"}
+
+User: current time please
+{"action": "get_time"}
+
+User: what is today's date
+{"action": "get_date"}
+
+User: what day is it
+{"action": "get_date"}
+
+# ==================== SCREENSHOTS & SELFIES ====================
+
+User: take a screenshot
+{"action": "take_screenshot"}
+
+User: capture my screen
+{"action": "take_screenshot"}
+
+User: screenshot
+{"action": "take_screenshot"}
+
+User: take a selfie
+{"action": "take_selfie"}
+
+User: take my photo
+{"action": "take_selfie"}
+
+User: click a selfie
+{"action": "take_selfie"}
+
+# ==================== WEB SEARCH & YOUTUBE ====================
+
+User: search for machine learning
+{"action": "search_web", "query": "machine learning"}
+
+User: google python tutorials
+{"action": "search_web", "query": "python tutorials"}
+
+User: search the web for best laptops
+{"action": "search_web", "query": "best laptops"}
+
+User: look up weather forecast
+{"action": "search_web", "query": "weather forecast"}
+
+User: play despacito on youtube
+{"action": "play_youtube", "query": "despacito"}
+
+User: play alan walker faded
+{"action": "play_youtube", "query": "alan walker faded"}
+
+User: youtube tutorial python
+{"action": "play_youtube", "query": "tutorial python"}
+
+# ==================== FILE OPERATIONS ====================
+
+User: create a file called notes.txt
+{"action": "create_file", "filename": "notes.txt", "content": ""}
+
+User: create file todo.txt with content buy groceries
+{"action": "create_file", "filename": "todo.txt", "content": "buy groceries"}
+
+User: open file report.pdf
+{"action": "open_file", "filename": "report.pdf"}
+
+User: delete file old_notes.txt
+{"action": "delete_file", "filename": "old_notes.txt"}
+
+# ==================== CAMERA & VISION ====================
+
+User: start the camera
+{"action": "start_camera"}
+
+User: open camera
+{"action": "start_camera"}
+
+User: turn on camera
+{"action": "start_camera"}
+
+User: stop the camera
+{"action": "stop_camera"}
+
+User: turn off camera
+{"action": "stop_camera"}
+
+User: what do you see
+{"action": "detect_objects"}
+
+User: scan the room
+{"action": "detect_objects"}
+
+User: detect objects
+{"action": "detect_objects"}
+
+# ==================== SYSTEM ====================
+
+User: lock screen
+{"action": "lock_screen"}
+
+User: shutdown computer
+{"action": "shutdown"}
+
+User: restart computer
+{"action": "restart"}
+
+User: system information
+{"action": "system_info"}
+
+User: what are my system specs
+{"action": "system_info"}
+
+# ==================== FUN ====================
+
+User: tell me a joke
+{"action": "tell_joke"}
+
+User: make me laugh
+{"action": "tell_joke"}
+
+User: play theme song
+{"action": "play_theme"}
+
+# ==================== MEMORY ====================
+
+User: remember that my name is Alice
+{"action": "remember_fact", "fact": "my name is Alice"}
+
+User: remember my birthday is March 15
+{"action": "remember_fact", "fact": "my birthday is March 15"}
+
+User: what is my name
+{"action": "what_is_my", "key": "name"}
+
+User: what is my birthday
+{"action": "what_is_my", "key": "birthday"}
+
+# ==================== DOWNLOADS ====================
+
+User: download images of ferrari
+{"action": "download_images", "query": "ferrari", "count": 5}
+
+User: download 10 pictures of mountains
+{"action": "download_images", "query": "mountains", "count": 10}
+
+User: download video from https://youtube.com/watch?v=abc123
+{"action": "download_video", "url": "https://youtube.com/watch?v=abc123"}
+
+# ==================== AMAZON ====================
+
+User: search amazon for wireless headphones
+{"action": "amazon_search", "product": "wireless headphones"}
+
+User: search amazon for laptop
+{"action": "amazon_search", "product": "laptop"}
+
+# ==================== GESTURE CONTROL ====================
+
+User: start gesture control
+{"action": "start_gesture_control"}
+
+User: activate gesture mode
+{"action": "start_gesture_control"}
+
+User: stop gesture control
+{"action": "stop_gesture_control"}
+
+User: deactivate gesture mode
+{"action": "stop_gesture_control"}
+
+# ==================== WHATSAPP COMMUNICATION ====================
+
+User: send whatsapp message to Alice saying hello
+{"action": "send_whatsapp", "recipient": "Alice", "message": "hello"}
+
+User: send a whatsapp to Bob saying meeting at 5
+{"action": "send_whatsapp", "recipient": "Bob", "message": "meeting at 5"}
+
+User: whatsapp Charlie saying project is ready
+{"action": "send_whatsapp", "recipient": "Charlie", "message": "project is ready"}
+
+User: send message to +15555555555 saying hi there
+{"action": "send_whatsapp", "recipient": "+15555555555", "message": "hi there"}
+
+User: schedule whatsapp to Alice at 9 30 saying good morning
+{"action": "schedule_whatsapp", "recipient": "Alice", "message": "good morning", "hour": 9, "minute": 30}
+
+User: schedule message to Bob at 14 00 saying reminder
+{"action": "schedule_whatsapp", "recipient": "Bob", "message": "reminder", "hour": 14, "minute": 0}
+
+User: read my whatsapp messages
+{"action": "read_whatsapp", "count": 10}
+
+User: check whatsapp
+{"action": "read_whatsapp", "count": 10}
+
+User: show recent whatsapp messages
+{"action": "read_whatsapp", "count": 10}
+
+User: add contact Alice with number +15555555555
+{"action": "add_contact", "name": "Alice", "phone": "+15555555555"}
+
+User: save contact Bob phone +15555555556
+{"action": "add_contact", "name": "Bob", "phone": "+15555555556"}
+
+User: list my contacts
+{"action": "list_contacts"}
+
+User: show all contacts
+{"action": "list_contacts"}
+
+# ==================== EMAIL COMMUNICATION ====================
+
+User: send email to alice@example.com about project update
+{"action": "send_email", "to": "alice@example.com", "subject": "Project Update", "body": "Here is the project update."}
+
+User: send an email to bob@example.com subject meeting body lets meet tomorrow
+{"action": "send_email", "to": "bob@example.com", "subject": "Meeting", "body": "Let's meet tomorrow."}
+
+User: email charlie@example.com about homework
+{"action": "send_email", "to": "charlie@example.com", "subject": "Homework", "body": "Regarding our homework assignment."}
+
+User: read my emails
+{"action": "read_email", "count": 10}
+
+User: check my inbox
+{"action": "read_email", "count": 10}
+
+User: show my emails
+{"action": "read_email", "count": 10}
+
+User: read unread emails
+{"action": "read_unread_email", "count": 10}
+
+User: check new emails
+{"action": "read_unread_email", "count": 10}
+
+User: any new mail
+{"action": "read_unread_email", "count": 10}
+
+User: search email about meeting
+{"action": "search_email", "query": "meeting"}
+
+User: find emails from professor
+{"action": "search_email", "query": "professor"}
+
+# ==================== SMART CREATE ====================
+
+User: create a login page
+{"action": "smart_create", "description": "a modern login page with HTML CSS and JavaScript"}
+
+User: make a portfolio website
+{"action": "smart_create", "description": "a modern portfolio website with HTML CSS"}
+
+User: generate a python calculator
+{"action": "smart_create", "description": "a calculator program in Python"}
+
+User: create a to do app
+{"action": "smart_create", "description": "a to-do list web application with HTML CSS JavaScript"}
+
+# ==================== EXIT ====================
+
+User: exit
+{"action": "exit"}
+
+User: quit
+{"action": "exit"}
+
+User: goodbye
+{"action": "exit"}
+
+User: bye
+{"action": "exit"}
+
+User: shut down yourself
+{"action": "exit"}
+
+User: go to sleep
+{"action": "exit"}

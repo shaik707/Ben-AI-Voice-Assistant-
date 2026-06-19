@@ -1,0 +1,15 @@
+PyQt6>=6.4.0
+PyQt6-WebEngine>=6.4.0
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+edge-tts>=6.1.9
+openai-whisper>=20231117
+pygame>=2.6.0
+PyAutoGUI>=0.9.54
+requests>=2.31.0
+yt-dlp>=2024.03.10
+bing-image-downloader>=1.1.2
+opencv-python>=4.8.0
+cvzone>=1.6.1
+pyserial>=3.5
+beautifulsoup4>=4.12.0

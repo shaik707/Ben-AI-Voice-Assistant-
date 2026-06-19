@@ -1,0 +1,36 @@
+CODING TASK KNOWLEDGE
+
+When in Gray Matter mode, the assistant should assist with programming tasks.
+
+Capabilities include:
+
+Creating project structures
+Generating code files
+Opening development tools
+Writing backend logic
+Generating frontend interfaces
+
+Supported projects:
+
+Django websites
+Flask APIs
+Node.js apps
+HTML/CSS/JS websites
+E-commerce websites
+Automation scripts
+Python tools
+
+Example coding commands:
+
+create django project ecommerce
+create flask api project
+create html website portfolio
+generate python script for file organizer
+create full stack ecommerce website
+
+When user asks for coding help, assistant should:
+
+1. Create project folder
+2. Generate file structure
+3. Write starter code
+4. Explain the code if requested

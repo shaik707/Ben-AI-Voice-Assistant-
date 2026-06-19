@@ -1,0 +1,165 @@
+content = """
+
+FULLSTACK DEVELOPMENT KNOWLEDGE DATABASE
+=======================================
+
+SECTION 1: INTRODUCTION TO FULLSTACK DEVELOPMENT
+
+Full stack development refers to the ability to build both the frontend
+(user interface) and backend (server logic and database) of an application.
+
+Frontend technologies:
+HTML
+CSS
+Bootstrap
+JavaScript
+
+Backend technologies:
+Python
+Django
+Flask
+NodeJS
+Databases
+
+A full stack developer understands the entire architecture of web applications.
+
+-------------------------------------------------------
+
+SECTION 2: HTML FUNDAMENTALS
+
+HTML stands for HyperText Markup Language.
+
+It is used to structure web pages.
+
+Basic HTML structure:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+</head>
+
+<body>
+
+<h1>Hello World</h1>
+
+<p>This is my first website</p>
+
+</body>
+</html>
+
+HTML elements include:
+
+head
+body
+div
+span
+header
+footer
+nav
+section
+article
+main
+
+HTML forms allow user input.
+
+Example:
+
+<form>
+<input type="text" placeholder="Enter name">
+<button>Submit</button>
+</form>
+
+"""
+
+# Expand dataset automatically
+sections = []
+
+for i in range(1,1200):
+
+    block = f"""
+-------------------------------------------------------
+FULLSTACK TRAINING BLOCK {i}
+
+HTML EXAMPLE
+
+<div class="container">
+<h2>Project Section {i}</h2>
+<p>This section demonstrates layout creation using HTML.</p>
+</div>
+
+CSS EXAMPLE
+
+.container{i} {{
+    width: 100%;
+    margin: auto;
+}}
+
+Bootstrap Example
+
+<div class="row">
+<div class="col-md-6">Left column</div>
+<div class="col-md-6">Right column</div>
+</div>
+
+JavaScript Example
+
+function projectFunction{i}() {{
+    console.log("Executing project function {i}");
+}}
+
+Frontend architecture concepts include:
+
+component structure
+layout grids
+responsive design
+UI state management
+API communication
+
+Backend architecture concepts include:
+
+server routing
+database models
+authentication
+API endpoints
+session management
+
+Example API call
+
+fetch("/api/products")
+.then(response => response.json())
+.then(data => console.log(data))
+
+Full stack project example:
+
+Project Name: Ecommerce Website
+
+Features:
+product listing
+shopping cart
+user authentication
+payment gateway
+admin dashboard
+
+Folder structure example:
+
+project{i}/
+    templates/
+    static/
+        css/
+        js/
+        images/
+    models.py
+    views.py
+    urls.py
+
+"""
+
+    sections.append(block)
+
+content += "\n".join(sections)
+
+with open("fullstack_projects.txt","w") as f:
+    f.write(content)
+
+print("fullstack_projects.txt generated successfully.")

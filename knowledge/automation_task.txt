@@ -1,0 +1,26 @@
+AUTOMATION KNOWLEDGE
+
+Automation manager can perform complex tasks automatically.
+
+Supported tasks include:
+
+Downloading files
+Downloading images
+Downloading videos
+Web scraping
+Amazon product search
+
+Example commands:
+
+download images of ferrari
+download video from youtube link
+download movie avatar
+
+search amazon for wireless headphones
+add product to cart
+place order using cash on delivery
+
+Important rule:
+
+Online payment must NOT be used.
+Only cash on delivery is allowed.

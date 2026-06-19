@@ -1,0 +1,57 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project local databases & memories
+memory.json
+memory.json.backup
+memory/user_memory.json
+memory/chat_history.json
+communication/contacts.json
+communication/whatsapp_contacts.json
+communication/whatsapp_log.json
+PyWhatKit_DB.txt
+speech.mp3
+
+# Generated media / user data folders
+downloads/
+screenshots/
+selfies/
+
+# IDE / OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+*.local
+.vscode/

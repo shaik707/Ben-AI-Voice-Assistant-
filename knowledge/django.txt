@@ -1,0 +1,208 @@
+DJANGO FRAMEWORK KNOWLEDGE FILE
+
+Django is a high-level Python web framework used for building secure,
+scalable, and maintainable web applications.
+
+It follows the MVT architecture pattern.
+
+MVT = Model View Template
+
+------------------------------------------------
+
+DJANGO FEATURES
+
+Rapid development
+Secure authentication system
+ORM (database abstraction)
+Admin panel
+Scalable architecture
+Built-in user authentication
+REST API support
+
+------------------------------------------------
+
+INSTALL DJANGO
+
+pip install django
+
+------------------------------------------------
+
+CREATE DJANGO PROJECT
+
+django-admin startproject projectname
+
+Example
+
+django-admin startproject ecommerce
+
+Project structure
+
+ecommerce/
+    manage.py
+    ecommerce/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+
+------------------------------------------------
+
+RUN DEVELOPMENT SERVER
+
+python manage.py runserver
+
+Server runs on
+
+http://127.0.0.1:8000
+
+------------------------------------------------
+
+CREATE DJANGO APP
+
+python manage.py startapp store
+
+App structure
+
+store/
+    models.py
+    views.py
+    urls.py
+    admin.py
+    apps.py
+    tests.py
+
+------------------------------------------------
+
+MODELS
+
+Models define database tables.
+
+Example
+
+from django.db import models
+
+class Product(models.Model):
+
+    name = models.CharField(max_length=200)
+    price = models.FloatField()
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+------------------------------------------------
+
+MIGRATIONS
+
+python manage.py makemigrations
+python manage.py migrate
+
+------------------------------------------------
+
+VIEWS
+
+Views handle logic and user requests.
+
+Example
+
+from django.shortcuts import render
+
+def home(request):
+    return render(request, "home.html")
+
+------------------------------------------------
+
+urls.py
+
+from django.urls import path
+from . import views    path("", views.home, name="home"),
+]
+
+------------------------------------------------
+
+TEMPLATES
+
+Templates contain HTML pages.
+
+Example
+
+templates/home.html
+
+<html>
+<head>
+<title>Home</title>
+</head>
+
+<body>
+
+<h1>Welcome to Django</h1>
+
+</body>
+</html>
+
+------------------------------------------------
+
+DJANGO ADMIN PANEL
+
+Create admin user
+
+python manage.py createsuperuser
+
+Login
+
+http://127.0.0.1:8000/admin
+
+------------------------------------------------
+
+DJANGO ECOMMERCE STRUCTURE
+
+project/
+
+products
+orders
+cart
+users
+payments
+
+Each module is a separate Django app.
+
+Example apps
+
+products
+orders
+accounts
+cart
+payments
+
+------------------------------------------------
+
+COMMON DJANGO COMMANDS
+
+runserver
+makemigrations
+migrate
+createsuperuser
+collectstatic
+
+------------------------------------------------
+
+WHEN USER ASKS
+
+"Create Django project"
+
+Assistant should:
+
+1. create project folder
+2. run startproject command
+3. create apps
+4. generate models
+5. generate views
+6. create templates
+7. configure urls
+
+Example command
+
+User: create django ecommerce website
+
+Assistant should generate full working structure.
